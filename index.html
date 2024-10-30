@@ -3,29 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="najmul-haque-talukder, Najmul H. Talukder, nht, najmul-h-talukder, najmul.h.talukder, najmul.haque.talukder">
+    <meta name="description" content="Najmul Haque Talukder is a Software Developer....">
+    <meta name="author" content="Najmul Haque Talukder">
+
+
+    <!--Font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--Google Font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: "Oswald", sans-serif;
+            background-color:rgb(240, 240, 240)
+        }
+    </style>
+
     <title>Document</title>
 </head>
 
 
 <body>
     <!--Nav Var-->
+    <header>
         <nav>
             <ul>
                 <li><a target="_self" href="index.html">Home</a></li>
-                <li> <a target="_self" href="about.html">About</a></li>
-                <li><a target="_self" href="contact.html">Contacts</a></li>
+                <li> <a target="_self" href="#about">About</a></li>
+                <li><a target="_self" href="#contact">Contacts</a></li>
+                <li><a target="_self" href="#skills">Skills</a></li>
             </ul>
         </nav>
+    </header>
+        
 
 
 
-    <!--Intro-->
-    <header id="intro">
+    <main>
+    
+        <!--Intro-->
+    <section id="intro">
         <h1>Najmul Haque Talukder</h1>
         <small>Host by : Najmul Haque Talukder </small>
-        <img src="./images/about.jpg" alt="Loading the Picture..." height="300px">
-    </header>
-
+        <img src="./images/about.jpg" alt="Loading the Picture..." height="300px"/>
+        
+    </section>
     <hr>
 
 
@@ -41,15 +69,59 @@
     <!--Skills-->
     <section id="skills">
         <h1>Skills</h1>
-        <ul type="square">
-            <li>Html</li>
-            <li>CSS</li>
-            <li>Java Script</li>
-            <li>Java</li>
-            <li>Kotlin</li>
-            <li>Python</li>
-            <li>Dart</li>
-        </ul>
+        
+        <div>
+            <ul type="square">
+                <li>
+                    <label for="html">HTML: </label> 
+                    <progress value="85" max="100">90%</progress>
+                </li>
+    
+    
+                <li>
+                    <label for="css">CSS:</label>
+                    <progress value="70" max="100">90%</progress>
+                    
+                </li>
+    
+    
+                <li>
+                    <label for="javascript">JAVASCRIPT: </label> 
+                    <progress value="60" max="100">90%</progress>
+                </li>
+    
+                <li>
+                    <label for="html">JAVA: </label> 
+                    <progress value="70" max="100">90%</progress>
+                </li>
+    
+    
+                <li>
+                    <label for="html">KOTLIN: </label> 
+                    <progress value="80" max="100">90%</progress>
+                </li>
+    
+    
+                <li>
+                    <label for="html">DART: </label> 
+                    <progress value="60" max="100">90%</progress>
+                </li>
+    
+    
+                <li>
+                    <label for="html">PYTHON: </label> 
+                    <progress value="70" max="100">90%</progress>
+                </li>
+    
+    
+            </ul>
+        </div>
+
+        <div>
+            <h3>Experiance Level : </h3>
+            <label for="experiance">Experiance : </label>
+            <meter id="experiance" min="0" max="5" value="2.5"></meter>
+        </div>
     </section>
     <hr>
 
@@ -86,7 +158,6 @@
 
 
     <!--Projects-->
-
     <section id="projects">
         <h1>Project</h1>
         <ul>
@@ -96,38 +167,89 @@
     </section>
     <hr>
 
+
+    
+    <!--Video-->
+    <section id="video">
+        <h1>Video For Web Testing : </h1>
+        <video height="400" controls>
+            <source src="./assets/video/naj.mp4" type="video/mp4">
+            your browser do not support this type of video
+        </video>
+    </section>
+    <hr>
+
+
     <!--Contacts-->
     <section id="contact">
         <h1>Contact Me</h1>
 
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your Name" required/>
+        <form action="https://formspree.io/f/manyqrzo" method="POST">
 
-        </div>
-
-
-        <div>
-            <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your Email" required>
-        </div>
-
-        <div>
-            <label for="massage">Massage:</label>
-            <textarea name="massage" id="massage" cols="17" rows="5" placeholder="Enter Your massage"></textarea>
-        </div>
-
-        
-        
-        <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
-
-
-
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Name" required/>
+    
+            </div>
+    
+    
+            <div>
+                <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            </div>
+    
+            <div>
+                <label for="massage">Massage:</label>
+                <textarea name="massage" id="massage" cols="17" rows="5" placeholder="Enter Your massage"></textarea>
+            </div>
+    
+    
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your Age" min="18" required>
+            </div>
+    
+            <div>
+                <label for="url">Url: </label>
+                <input type="url" name="url" id="url" placeholder="Enter Your url">
+            </div>
+    
+    
+            <div>
+                <label for="image">Upload Your Image:</label>
+                <input type="file" name="image" id="image" accept="image/jpg">
+            </div>
+    
+            <div>
+                <label for="subject">Visit For : </label>
+                <select name="subject" id="subject">
+                    <option value="viewing">Viewing</option>
+                    <option value="rendomly">Rendomly</option>
+                    <option value="resourch">Resourch</option>
+                    <option value="contact">Contact</option>
+                    <option value="develop">For Devevelop Something</option>
+                    <option value="idea">For some idea</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="nothing">Nothing</option>
+                    
+    
+                </select>
+            </div>
+    
+            
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </form>
 
         <hr>
-
     </section>
+    </main>
+
+
+
+
+
 
     <!--Footer-->
     <footer>
@@ -135,6 +257,24 @@
         <p>Developed with Love &hearts;</p>
         <a href="tel:01611039425">Call Me</a>
         <a href="mailto:talukderrobiulhasan@gmail.com">Email Me</a>
+
+
+        <div>
+            <h3>Follow Me : </h3>
+        <ul>
+            <li><a href="https://www.facebook.com/najmul.9341" target="_blank"> <i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://github.com/najmul-haque-talukder" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+
+        </ul>
+        </div>
+
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234331.22791874624!2d90.4814177669266!3d23.408994127126004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3754559f11f26c55%3A0x35aa595c987c19ee!2sMatlab%20Uttar%20Upazila!5e0!3m2!1sen!2sbd!4v1730270160170!5m2!1sen!2sbd" width="600" height="200" title="Home Adress" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        
+
     </footer>
 
 
