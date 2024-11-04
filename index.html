@@ -18,15 +18,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
-    <style>
-        body{
-            font-family: "Oswald", sans-serif;
-            background-color:rgb(240, 240, 240)
-        }
-    </style>
 
-    <title>Document</title>
+    <title>Najmul H. Talukder</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+
 </head>
+
+    
+
 
 
 <body>
@@ -46,96 +45,96 @@
 
 
     <main>
+
+
+
+    <section id="background" class="background card">
+        <div>
+            <h1 class="intro_title">Wellcome To My Website</h1>
+            <p class="intro_desc">If you are a Developer, Everything Developed With Love &hearts;</p>
+        </div>
+    </section>
     
         <!--Intro-->
-    <section id="intro">
-        <h1>Najmul Haque Talukder</h1>
-        <small>Host by : Najmul Haque Talukder </small>
-        <img src="./images/about.jpg" alt="Loading the Picture..." height="300px"/>
+    <div class="card">
+        <section id="intro">
+            <h1 class="naj">Najmul Haque Talukder</h1>
+            <hr>
+            <small>The Website Host by : 'Najmul Haque Talukder' also.  </small>
+            <img src="./images/about.jpg" alt="Loading the Picture..." width="100%"/>
+            
+        </section>
         
-    </section>
-    <hr>
+    </div>
 
 
     <!--About Me-->
-    <section id="about">
+    <section id="about" class="card">
         <h1>About</h1>
        
         <p>Recent computer science graduate with a passion for coding and problem-solving. Proficient in <mark> Java, Python and Kotlin,</mark> with hands-on experience developing web applications and software solutions through academic projects. Eager to apply technical skills and creativity in an entry-level software development role to contribute to innovative and impactful technology solutions.</p>
     </section>
-    <hr>
 
     
     <!--Skills-->
-    <section id="skills">
-        <h1>Skills</h1>
+    <section id="skills" class="card">
+        <h1>Im Good in : </h1>
         
         <div>
             <ul type="square">
                 <li>
-                    <label for="html">HTML: </label> 
-                    <progress value="85" max="100">90%</progress>
+                    HTML
+                </li>
+    
+    
+                <li>CSS</li>
+    
+    
+                <li>
+                    Javascript
+                </li>
+    
+                <li>
+                   JAVA
                 </li>
     
     
                 <li>
-                    <label for="css">CSS:</label>
-                    <progress value="70" max="100">90%</progress>
-                    
+                    Kotlin
                 </li>
     
     
                 <li>
-                    <label for="javascript">JAVASCRIPT: </label> 
-                    <progress value="60" max="100">90%</progress>
-                </li>
-    
-                <li>
-                    <label for="html">JAVA: </label> 
-                    <progress value="70" max="100">90%</progress>
+                    Dart
                 </li>
     
     
                 <li>
-                    <label for="html">KOTLIN: </label> 
-                    <progress value="80" max="100">90%</progress>
-                </li>
-    
-    
-                <li>
-                    <label for="html">DART: </label> 
-                    <progress value="60" max="100">90%</progress>
-                </li>
-    
-    
-                <li>
-                    <label for="html">PYTHON: </label> 
-                    <progress value="70" max="100">90%</progress>
+                    PYTHON
                 </li>
     
     
             </ul>
         </div>
 
-        <div>
-            <h3>Experiance Level : </h3>
-            <label for="experiance">Experiance : </label>
-            <meter id="experiance" min="0" max="5" value="2.5"></meter>
-        </div>
+       
     </section>
-    <hr>
+    
 
-    <section id="education">
+    <section id="education" class="card">
         <h1>Education</h1>
 
-        <table border="1" cellpadding="5" cellspacing="0">
+        <table>
             <thead>
                 <tr>
                     <th>Institute</th>
                     <th>Exam</th>
                     <th>GPA/CGPA</th>
                 </tr>
-                
+            </thead>
+
+
+            <tbody>
                 <tr>
                     <td>Jamila Khatun High School</td>
                     <td>SSC</td>
@@ -147,10 +146,8 @@
                     <td>Diploma in Engineering</td>
                     <td>Upcomeing....</td>
                 </tr>
-            </thead>
+            </tbody>
         </table>
-
-        <hr>
 
     </section>
 
@@ -158,67 +155,53 @@
 
 
     <!--Projects-->
-    <section id="projects">
+    <section id="projects" class="card">
         <h1>Project</h1>
         <ul>
             <li><a target="_blank" href="https://github.com/najmul-haque-talukder/Chating-Apps">Chat Application</a></li>
             <li><a target="_blank" href="https://github.com/najmul-haque-talukder/Digital-Tasbih-Apps">Tasbih Apps</a></li>
         </ul>
     </section>
-    <hr>
 
 
     
-    <!--Video-->
-    <section id="video">
-        <h1>Video For Web Testing : </h1>
-        <video height="400" controls>
-            <source src="./assets/video/naj.mp4" type="video/mp4">
-            your browser do not support this type of video
-        </video>
-    </section>
-    <hr>
-
 
     <!--Contacts-->
-    <section id="contact">
-        <h1>Contact Me</h1>
+    <section id="contact" class="card">
+        <h1 id="contact_h1">Contact Me</h1>
 
         <form action="https://formspree.io/f/manyqrzo" method="POST">
 
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your Name" required/>
+
+
+
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your Name" required/>
+        
+                </div>
+        
+        
+                <div>
+                    <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                </div>
     
-            </div>
     
-    
-            <div>
-                <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
-            </div>
-    
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your Age" min="18" required>
+                </div>
+
+
+
+
             <div>
                 <label for="massage">Massage:</label>
                 <textarea name="massage" id="massage" cols="17" rows="5" placeholder="Enter Your massage"></textarea>
             </div>
     
     
-            <div>
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" placeholder="Enter your Age" min="18" required>
-            </div>
-    
-            <div>
-                <label for="url">Url: </label>
-                <input type="url" name="url" id="url" placeholder="Enter Your url">
-            </div>
-    
-    
-            <div>
-                <label for="image">Upload Your Image:</label>
-                <input type="file" name="image" id="image" accept="image/jpg">
-            </div>
     
             <div>
                 <label for="subject">Visit For : </label>
@@ -235,14 +218,41 @@
     
                 </select>
             </div>
+
+            <div>
+                <label for="programming">Favourite Programming Language : </label>
+
+                <input list="languages" name="programmeing" id="programming">
+            </div>
+
+            <datalist id="languages">
+                <option value="C"></option>
+                <option value="C++"></option>
+                <option value="C#"></option>
+                <option value="Python"></option>
+                <option value="Java"></option>
+                <option value="Javascript"></option>
+                <option value="Html"></option>
+                <option value="CSS"></option>
+                <option value="Kotlin"></option>
+                <option value="Dart"></option>
+            </datalist>
     
             
             
             <button type="submit">Submit</button>
             <button type="reset">Clear</button>
-        </form>
+                        
 
-        <hr>
+
+            <fieldset>
+                <div>
+                    <a href="tel:01611039425">Click  Here to Call Me</a>
+                    <br>
+                    <a href="mailto:talukderrobiulhasan@gmail.com">Click Here to Email Me</a>
+                </div>
+            </fieldset>
+        </form>
     </section>
     </main>
 
@@ -253,24 +263,26 @@
 
     <!--Footer-->
     <footer>
-        <p>Copyright Reversed by &copy; Najmul Haque Talukder</p>
-        <p>Developed with Love &hearts;</p>
-        <a href="tel:01611039425">Call Me</a>
-        <a href="mailto:talukderrobiulhasan@gmail.com">Email Me</a>
-
+        
 
         <div>
-            <h3>Follow Me : </h3>
+            <p>Copyright Reversed by &copy; Najmul Haque Talukder</p>
+        <p>Developed with Love &hearts;</p>
+        </div>
+
+
+        <div class="socialMedia">
+            <h3>Follow Me On</h3>
         <ul>
             <li><a href="https://www.facebook.com/najmul.9341" target="_blank"> <i class="fa-brands fa-facebook"></i></a></li>
             <li><a href="https://github.com/najmul-haque-talukder" target="_blank"><i class="fa-brands fa-github"></i></a></li>
 
         </ul>
-        </div>
+        </div> 
 
 
         <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234331.22791874624!2d90.4814177669266!3d23.408994127126004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3754559f11f26c55%3A0x35aa595c987c19ee!2sMatlab%20Uttar%20Upazila!5e0!3m2!1sen!2sbd!4v1730270160170!5m2!1sen!2sbd" width="600" height="200" title="Home Adress" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234331.22791874624!2d90.4814177669266!3d23.408994127126004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3754559f11f26c55%3A0x35aa595c987c19ee!2sMatlab%20Uttar%20Upazila!5e0!3m2!1sen!2sbd!4v1730270160170!5m2!1sen!2sbd" width="300" height="200" title="Home Adress" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         
         

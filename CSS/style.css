@@ -1,0 +1,355 @@
+
+
+
+
+:root{
+    --primary-color:#5eff00;
+    --socendary-color: #ffffff;
+    --third-color: #BCF2F6;
+    --yellow-color: #FFF100;
+    --background-color : #dfdfdf;
+    --padding:10px;
+
+}
+
+*{
+    margin: 0;
+}
+
+
+
+
+/*Body Starts here*/
+
+body{
+    background-color: var(--background-color);
+    font-family: "Oswald", sans-serif;
+}
+/*Footer Ends here-----------------------------------------------------------------------------------*/
+
+
+.card{
+    background-color: var(--socendary-color) ;
+    border-radius: 10px;
+    margin: 40px 0px;
+    padding: 20px;
+    box-shadow: #00000059 0 3px 3px;
+}
+
+
+/*header Starts here*/
+header{
+    background-color: var(--primary-color);
+    padding: 7px;
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+
+
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+nav ul li{
+    list-style: none;
+    text-align: center;
+    font-weight: 700;
+    margin: 0px 10px;
+
+}
+
+
+nav ul li a{
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+
+}
+
+nav ul li a:hover{
+    background-color:#83ff3b;
+
+}
+
+
+/*Header Ends Here-------------------------------------------------------------------------------*/
+
+
+
+/*Main Starts here*/
+
+main{
+    width: 80%;
+    margin: auto;
+
+}
+
+
+input, select, textarea{
+    padding: 7px;
+    margin: 7px 0px;
+    width: 100%;
+    border-radius: 7px;
+    box-sizing: border-box;
+
+}
+
+
+#contact_h1{
+    text-align: center;
+}
+
+.background{
+    padding: -40px;
+    background-image: url(../images/kbg.jpg);
+    height: 85vh;
+    margin-top: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.intro_title{
+    color: var(--socendary-color);
+    background-color: #00000085;
+    padding: 0px 30px;
+}
+
+
+.intro_desc{
+    color: var(--socendary-color);
+    background-color: #00000085;
+    padding: 0px 30px;
+}
+
+
+.naj{
+    text-align: center;
+    font-size: 30px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+table, thead, tbody, th, td{
+    border: #cecece solid 2px;
+    padding: 10px;
+    text-align: center;
+}
+
+table thead{
+    background-color: var(--background-color);
+    
+
+}
+
+table tbody{
+
+}
+
+
+
+button{
+    background-color: var(--yellow-color);
+    color: black;
+    padding: 4px 15px;
+    border: 0.1px balck solid;
+    border-radius: 5px;
+    font-family: "Oswald", sans-serif;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.281) 0 3px 3px;
+    cursor:pointer;
+    margin-bottom: 30px;
+
+
+}
+
+h1{
+   color:#17c500; 
+}
+
+
+button:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+/*Main Ends here----------------------------------------------------------------------------------*/
+
+
+
+/*Footer Starts here*/
+footer{
+
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    padding: 10px 20px;
+
+
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+
+
+
+
+footer a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    list-style: none;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    color: #000000;
+}
+
+.socialMedia{
+    color: var(--socendary-color);
+    margin: 0px 7px;
+
+    
+
+}
+
+.socialMedia ul{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 49px;
+}
+
+.socialMedia ul li{
+    margin: 5px;
+    justify-content: left;
+}
+
+.socialMedia a{
+    justify-content: center;
+    font-size: 25px;
+}
+
+/*Footer Endss here---------------------------------------------------------------------------------------*/
+
+
+/*Responsiveness Starts Here*/
+
+@media screen and (max-width:1200px){
+    
+}
+
+
+@media screen and (max-width:900px){
+    .background{
+        padding: -40px;
+        background-image: url(../images/kbg.jpg);
+        height: 200px;
+    }
+
+
+
+    .intro_title{
+        color:#ffffff;
+        padding: 0px 30px;
+        background-color: #00000085;
+    }
+    
+    
+    .intro_desc{
+        color:rgb(255, 255, 255);
+        padding: 0px 30px;
+        background-color: #00000085;
+    }
+
+
+
+
+
+    footer{
+
+        background-color: var(--primary-color);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        list-style: none;
+        width: 100%;
+        padding: 10px 20px;
+    
+    
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        
+    
+    }
+
+
+    .socialMedia ul{
+        margin-left: 35%;
+    }
+
+}
+
+
+@media screen and (max-width:768px){
+
+
+    .background{
+        padding: -40px;
+        background-image: none;
+        height: 200px;
+    }
+
+
+
+    .intro_title{
+        color:#17c500;
+        padding: 0px 30px;
+        background-color: #00000000;
+    }
+    
+    
+    .intro_desc{
+        color:rgb(0, 0, 0);
+        padding: 0px 30px;
+        background-color: #00000000;
+    }
+
+}
+
+
+@media screen and (max-width:600px){
+
+}
+
+
+
+/*Responsiveness Ends Here---------------------------------------------------------------------------------*/
